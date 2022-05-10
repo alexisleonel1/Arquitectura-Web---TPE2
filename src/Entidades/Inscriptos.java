@@ -6,7 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-public class EstudianteCarrera {
+public class Inscriptos {
 	
 	@Id
 	@ManyToOne
@@ -22,11 +22,11 @@ public class EstudianteCarrera {
 	@Column
 	private boolean graduado;
 
-	public EstudianteCarrera() {
+	public Inscriptos() {
 		super();
 	}
 	
-	public EstudianteCarrera(Estudiante estudiante, Carrera carrera, int antiguedad, boolean graduado) {
+	public Inscriptos(Estudiante estudiante, Carrera carrera, int antiguedad, boolean graduado) {
 		super();
 		this.estudiante = estudiante;
 		this.carrera = carrera;
