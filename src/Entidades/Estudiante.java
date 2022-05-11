@@ -104,6 +104,6 @@ public class Estudiante {
 	public String toString() {
 		return "Estudiante [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", genero="
 				+ genero + ", dni=" + dni + ", numLibretaUniversitaria=" + numLibretaUniversitaria + ", ciudad="
-				+ ciudad + ", carreras=" + "]";
+				+ ciudad + "]";
 	}
 }

@@ -1,5 +1,7 @@
 package Entidades;
 
+import java.sql.Timestamp;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -17,7 +19,7 @@ public class Inscriptos {
 	private Carrera carrera;
 	
 	@Column
-	private int antiguedad;
+	private Timestamp antiguedad;
 	
 	@Column
 	private boolean graduado;
@@ -26,7 +28,7 @@ public class Inscriptos {
 		super();
 	}
 	
-	public Inscriptos(Estudiante estudiante, Carrera carrera, int antiguedad, boolean graduado) {
+	public Inscriptos(Estudiante estudiante, Carrera carrera, Timestamp antiguedad, boolean graduado) {
 		super();
 		this.estudiante = estudiante;
 		this.carrera = carrera;
@@ -42,11 +44,11 @@ public class Inscriptos {
 		return carrera;
 	}
 
-	public int getAntiguedad() {
+	public Timestamp getAntiguedad() {
 		return antiguedad;
 	}
 
-	public void setAntiguedad(int antiguedad) {
+	public void setAntiguedad(Timestamp antiguedad) {
 		this.antiguedad = antiguedad;
 	}
 
